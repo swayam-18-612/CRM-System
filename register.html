@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CoreCRM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="auth-page">
+    <main class="auth-shell">
+        <a class="brand auth-brand" href="index.html"><span class="brand-mark">C</span><span><strong>CoreCRM</strong><small>Enterprise</small></span></a>
+        <section class="auth-card">
+            <p class="eyebrow">Start with clarity</p>
+            <h1>Create your account</h1>
+            <p class="auth-intro">Set up your workspace and make every customer conversation count.</p>
+            <form class="auth-form" onsubmit="handleRegister(event)">
+                <label for="registerName">Full name</label>
+                <input id="registerName" type="text" placeholder="Your name" required>
+                <label for="registerEmail">Email address</label>
+                <input id="registerEmail" type="email" placeholder="you@company.com" required>
+                <label for="registerPassword">Password</label>
+                <input id="registerPassword" type="password" placeholder="Create a password" required>
+                <label for="confirmPassword">Confirm password</label>
+                <input id="confirmPassword" type="password" placeholder="Repeat your password" required>
+                <p class="auth-message" id="registerMessage" role="alert" aria-live="polite"></p>
+                <button class="primary-btn auth-submit" type="submit">Register</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="Login.html">Login</a></p>
+        </section>
+        <p class="auth-footer"><a href="index.html">← Back to home</a></p>
+    </main>
+</body>
+</html>

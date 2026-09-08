@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | CoreCRM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo"><div class="logo-icon">C</div><div><h2>CoreCRM</h2><span>Enterprise</span></div></div>
+        <nav><p class="menu-title">MAIN MENU</p><a href="index.html" class="nav-item"><span>▣</span> Dashboard</a><a href="Customers.html" class="nav-item"><span>♙</span> Customers</a><a href="Leads.html" class="nav-item"><span>◈</span> Leads</a><a href="Opportunities.html" class="nav-item"><span>▤</span> Opportunities</a><a href="Tasks.html" class="nav-item"><span>✓</span> Tasks</a><a href="Reports.html" class="nav-item active"><span>▣</span> Reports</a><p class="menu-title">MANAGEMENT</p><a href="Settings.html" class="nav-item"><span>⚙</span> Settings</a><a href="Help.html" class="nav-item"><span>?</span> Help &amp; Support</a></nav>
+        <div class="user-profile"><div class="avatar">DB</div><div><strong>Dhruv Baria</strong><small>Administrator</small></div></div>
+    </aside>
+    <main class="main">
+        <header class="header"><div class="search"><span>⌕</span><input type="text" placeholder="Search customers, leads..."></div><div class="header-right"><button class="notification">♧</button><div class="profile"><div class="avatar">DB</div><div><strong>Dhruv Baria</strong><small>Administrator</small></div></div></div></header>
+        <section class="content">
+            <div class="page-heading"><div><h1>Reports</h1><p>Track performance, pipeline health, and customer growth.</p></div><div class="toolbar-actions"><select id="reportPeriod"><option>June 2026</option><option>July 2026</option></select><button class="primary-btn" id="generateReport">▤ Generate Report</button><button class="outline-btn" id="exportReport">Export</button></div></div>
+            <div class="stats compact-stats"><div class="stat-card"><div class="stat-icon blue">₹</div><div><p>Total Revenue</p><h2>₹24.8L</h2><span class="positive">↑ 18.4%</span></div></div><div class="stat-card"><div class="stat-icon green">✓</div><div><p>Won Deals</p><h2>84</h2><span class="positive">↑ 14.1%</span></div></div><div class="stat-card"><div class="stat-icon purple">◈</div><div><p>Conversion Rate</p><h2>34.6%</h2><span class="positive">↑ 5.8%</span></div></div><div class="stat-card"><div class="stat-icon orange">◷</div><div><p>Avg. Sales Cycle</p><h2>21 days</h2><span class="negative">↑ 1.6%</span></div></div></div>
+            <div class="dashboard-grid"><div class="panel"><div class="panel-header"><div><h3>Revenue Performance</h3><p>Monthly revenue against target</p></div><button class="more">•••</button></div><div class="report-chart"><div class="report-bars"><div class="report-bar" style="height:54%"><span>Apr</span></div><div class="report-bar" style="height:67%"><span>May</span></div><div class="report-bar" style="height:61%"><span>Jun</span></div><div class="report-bar" style="height:76%"><span>Jul</span></div><div class="report-bar" style="height:70%"><span>Aug</span></div><div class="report-bar highlight" style="height:91%"><span>Sep</span></div></div></div></div>
+                <div class="panel"><div class="panel-header"><div><h3>Lead Sources</h3><p>Where opportunities begin</p></div></div><div class="source-list"><div><span><i class="source-dot blue-dot"></i>Website</span><strong>42%</strong></div><div><span><i class="source-dot green-dot"></i>Referrals</span><strong>28%</strong></div><div><span><i class="source-dot orange-dot"></i>Events</span><strong>18%</strong></div><div><span><i class="source-dot pink-dot"></i>Social media</span><strong>12%</strong></div></div></div></div>
+            <div class="panel"><div class="panel-header"><div><h3>Top Performing Reps</h3><p>Revenue closed this month</p></div><button class="outline-btn">View Details</button></div><div class="report-reps"><div><div class="customer-avatar a1">AS</div><span><strong>Arjun Sharma</strong><small>18 deals closed</small></span><b>₹6.4L</b></div><div><div class="customer-avatar a2">PK</div><span><strong>Priya Kapoor</strong><small>14 deals closed</small></span><b>₹5.8L</b></div><div><div class="customer-avatar a3">RK</div><span><strong>Rahul Kumar</strong><small>12 deals closed</small></span><b>₹4.9L</b></div></div></div>
+            <div class="panel generated-report" id="generatedReport" hidden><div class="panel-header"><div><h3>Generated Report</h3><p id="generatedReportSummary">Generate a report to see the current period summary.</p></div></div><div class="table-container"><table><thead><tr><th>Metric</th><th>Value</th><th>Change</th><th>Action</th></tr></thead><tbody id="generatedReportBody"></tbody></table></div></div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

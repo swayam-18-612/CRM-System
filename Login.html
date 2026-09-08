@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CoreCRM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="auth-page">
+    <main class="auth-shell">
+        <a class="brand auth-brand" href="index.html"><span class="brand-mark">C</span><span><strong>CoreCRM</strong><small>Enterprise</small></span></a>
+        <section class="auth-card">
+            <p class="eyebrow">Welcome back</p>
+            <h1>Sign in to CoreCRM</h1>
+            <p class="auth-intro">Pick up where you left off and keep your team moving.</p>
+            <form class="auth-form" onsubmit="handleLogin(event)">
+                <label for="loginEmail">Email address</label>
+                <input id="loginEmail" type="email" placeholder="you@company.com" required>
+                <label for="loginPassword">Password</label>
+                <input id="loginPassword" type="password" placeholder="Enter your password" required>
+                <p class="auth-message" id="loginMessage" role="alert" aria-live="polite"></p>
+                <button class="primary-btn auth-submit" type="submit">Login</button>
+            </form>
+            <p class="auth-switch">New to CoreCRM? <a href="register.html">Create an account</a></p>
+        </section>
+        <p class="auth-footer"><a href="index.html">← Back to home</a></p>
+    </main>
+</body>
+</html>

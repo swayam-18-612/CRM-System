@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreCRM | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="landing-page">
+
+<div class="landing-shell">
+    <header class="site-nav">
+        <a class="brand" href="index.html"><span class="brand-mark">C</span><span><strong>CoreCRM</strong><small>Enterprise</small></span></a>
+        <nav class="site-links" aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="Login.html">Login</a>
+            <a class="site-link-button" href="register.html">Register</a>
+        </nav>
+    </header>
+    <main class="landing-main">
+        <section class="landing-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">A clearer way to grow</p>
+                <h1>Welcome to CoreCRM.</h1>
+                <p class="hero-text">Bring customer relationships, opportunities, and team momentum into one calm, focused workspace.</p>
+                <div class="hero-actions"><a class="primary-btn" href="register.html">Get started</a><a class="text-link" href="Login.html">Sign in to your account <span>→</span></a></div>
+            </div>
+            <div class="hero-visual" aria-label="CoreCRM workspace preview"><div class="preview-top"><span></span><span></span><span></span><b>Workspace overview</b></div><div class="preview-grid"><div class="preview-card preview-wide"><small>Pipeline health</small><strong>₹24.8L</strong><div class="preview-bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="preview-card"><small>Active leads</small><strong>486</strong><em>+8.2%</em></div><div class="preview-card preview-wide"><small>Customer momentum</small><div class="preview-lines"><i></i><i></i><i></i></div></div></div></div>
+        </section>
+        <section class="landing-features"><div><span class="feature-icon">♙</span><h2>Know your customers</h2><p>Keep every relationship easy to find and ready for the next conversation.</p></div><div><span class="feature-icon">▤</span><h2>Move work forward</h2><p>See the right opportunities and tasks without losing the bigger picture.</p></div><div><span class="feature-icon">◷</span><h2>Measure what matters</h2><p>Turn everyday activity into a sharper view of your business.</p></div></section>
+    </main>
+    <footer class="site-footer"><div><strong>CoreCRM</strong><span>Simple systems for lasting customer relationships.</span></div><div class="footer-links"><a href="Login.html">Login</a><a href="register.html">Register</a><a href="Help.html">Contact support</a></div><span>© 2026 CoreCRM</span></footer>
+</div>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">C</div>
+            <div>
+                <h2>CoreCRM</h2>
+                <span>Enterprise</span>
+            </div>
+        </div>
+
+        <nav>
+            <p class="menu-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-item active">
+                <span>▣</span> Dashboard
+            </a>
+
+            <a href="Customers.html" class="nav-item">
+                <span>♙</span> Customers
+            </a>
+
+            <a href="Leads.html" class="nav-item">
+                <span>◈</span> Leads
+            </a>
+
+            <a href="Opportunities.html" class="nav-item">
+                <span>▤</span> Opportunities
+            </a>
+
+            <a href="Tasks.html" class="nav-item">
+                <span>✓</span> Tasks
+            </a>
+
+            <a href="Reports.html" class="nav-item">
+                <span>▣</span> Reports
+            </a>
+
+            <p class="menu-title">MANAGEMENT</p>
+
+            <a href="Settings.html" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="Help.html" class="nav-item">
+                <span>?</span> Help & Support
+            </a>
+        </nav>
+
+        <div class="user-profile">
+            <div class="avatar">DB</div>
+            <div>
+                <strong>Dhruv Baria</strong>
+                <small>Administrator</small>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="search">
+                <span>⌕</span>
+                <input type="text" placeholder="Search customers, leads...">
+            </div>
+
+            <div class="header-right">
+                <button class="notification">♧</button>
+
+                <div class="profile">
+                    <div class="avatar">DB</div>
+                    <div>
+                        <strong>Dhruv Baria</strong>
+                        <small>Administrator</small>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <section class="content">
+
+            <div class="page-heading">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back! Here's what's happening with your business.</p>
+                </div>
+
+                <button class="primary-btn" onclick="openModal()">
+                    + Add Customer
+                </button>
+            </div>
+
+
+            <!-- STAT CARDS -->
+            <div class="stats">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">♙</div>
+                    <div>
+                        <p>Total Customers</p>
+                        <h2>2,458</h2>
+                        <span class="positive">↑ 12.5%</span>
+                        <small> vs last month</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">◈</div>
+                    <div>
+                        <p>Active Leads</p>
+                        <h2>486</h2>
+                        <span class="positive">↑ 8.2%</span>
+                        <small> vs last month</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">₹</div>
+                    <div>
+                        <p>Revenue</p>
+                        <h2>₹24.8L</h2>
+                        <span class="positive">↑ 18.4%</span>
+                        <small> vs last month</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">▤</div>
+                    <div>
+                        <p>Open Deals</p>
+                        <h2>126</h2>
+                        <span class="negative">↓ 3.1%</span>
+                        <small> vs last month</small>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- MIDDLE SECTION -->
+            <div class="dashboard-grid">
+
+                <!-- SALES OVERVIEW -->
+                <div class="panel sales-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Sales Overview</h3>
+                            <p>Monthly revenue performance</p>
+                        </div>
+
+                        <select>
+                            <option>Last 6 Months</option>
+                            <option>Last 12 Months</option>
+                        </select>
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="y-axis">
+                            <span>₹10L</span>
+                            <span>₹8L</span>
+                            <span>₹6L</span>
+                            <span>₹4L</span>
+                            <span>₹2L</span>
+                            <span>₹0</span>
+                        </div>
+
+                        <div class="bars">
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:45%"></div>
+                                <span>Apr</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:60%"></div>
+                                <span>May</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:52%"></div>
+                                <span>Jun</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:75%"></div>
+                                <span>Jul</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:68%"></div>
+                                <span>Aug</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar current" style="height:90%"></div>
+                                <span>Sep</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- SALES PIPELINE -->
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Sales Pipeline</h3>
+                            <p>Current opportunities</p>
+                        </div>
+
+                        <button class="more">•••</button>
+                    </div>
+
+                    <div class="pipeline">
+
+                        <div class="pipeline-row">
+                            <div class="pipeline-info">
+                                <span>Prospecting</span>
+                                <strong>₹8.4L</strong>
+                            </div>
+                            <div class="progress">
+                                <div style="width:80%"></div>
+                            </div>
+                            <small>32 deals</small>
+                        </div>
+
+                        <div class="pipeline-row">
+                            <div class="pipeline-info">
+                                <span>Qualification</span>
+                                <strong>₹6.2L</strong>
+                            </div>
+                            <div class="progress">
+                                <div style="width:65%"></div>
+                            </div>
+                            <small>24 deals</small>
+                        </div>
+
+                        <div class="pipeline-row">
+                            <div class="pipeline-info">
+                                <span>Proposal</span>
+                                <strong>₹4.8L</strong>
+                            </div>
+                            <div class="progress">
+                                <div style="width:48%"></div>
+                            </div>
+                            <small>18 deals</small>
+                        </div>
+
+                        <div class="pipeline-row">
+                            <div class="pipeline-info">
+                                <span>Negotiation</span>
+                                <strong>₹3.5L</strong>
+                            </div>
+                            <div class="progress">
+                                <div style="width:35%"></div>
+                            </div>
+                            <small>12 deals</small>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CUSTOMER TABLE -->
+            <div class="panel customers-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Recent Customers</h3>
+                        <p>Recently added customers</p>
+                    </div>
+
+                    <button class="outline-btn">View All</button>
+                </div>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Company</th>
+                                <th>Status</th>
+                                <th>Deal Value</th>
+                                <th>Last Contact</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar a1">AS</div>
+                                        <div>
+                                            <strong>Arjun Sharma</strong>
+                                            <small>arjun@email.com</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>TechNova Pvt Ltd</td>
+
+                                <td>
+                                    <span class="badge active-status">Active</span>
+                                </td>
+
+                                <td>₹2,40,000</td>
+
+                                <td>Today, 10:30 AM</td>
+
+                                <td>
+                                    <button class="action">•••</button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar a2">PK</div>
+                                        <div>
+                                            <strong>Priya Kapoor</strong>
+                                            <small>priya@email.com</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Global Solutions</td>
+
+                                <td>
+                                    <span class="badge pending-status">Pending</span>
+                                </td>
+
+                                <td>₹1,85,000</td>
+
+                                <td>Yesterday</td>
+
+                                <td>
+                                    <button class="action">•••</button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar a3">RK</div>
+                                        <div>
+                                            <strong>Rahul Kumar</strong>
+                                            <small>rahul@email.com</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Innovate Systems</td>
+
+                                <td>
+                                    <span class="badge active-status">Active</span>
+                                </td>
+
+                                <td>₹3,20,000</td>
+
+                                <td>Sep 5, 2026</td>
+
+                                <td>
+                                    <button class="action">•••</button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <div class="customer">
+                                        <div class="customer-avatar a4">NM</div>
+                                        <div>
+                                            <strong>Neha Mehta</strong>
+                                            <small>neha@email.com</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>FutureTech Ltd</td>
+
+                                <td>
+                                    <span class="badge inactive-status">Inactive</span>
+                                </td>
+
+                                <td>₹95,000</td>
+
+                                <td>Sep 3, 2026</td>
+
+                                <td>
+                                    <button class="action">•••</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM -->
+            <div class="bottom-grid">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Upcoming Activities</h3>
+                            <p>Your scheduled activities</p>
+                        </div>
+
+                        <button class="outline-btn">View All</button>
+                    </div>
+
+                    <div class="activity">
+
+                        <div class="activity-icon">☎</div>
+
+                        <div>
+                            <strong>Call with Arjun Sharma</strong>
+                            <p>Discuss project requirements</p>
+                            <small>Today • 2:30 PM</small>
+                        </div>
+
+                    </div>
+
+                    <div class="activity">
+
+                        <div class="activity-icon">▣</div>
+
+                        <div>
+                            <strong>Product Demo</strong>
+                            <p>Global Solutions</p>
+                            <small>Tomorrow • 11:00 AM</small>
+                        </div>
+
+                    </div>
+
+                    <div class="activity">
+
+                        <div class="activity-icon">✉</div>
+
+                        <div>
+                            <strong>Follow-up Email</strong>
+                            <p>Innovate Systems</p>
+                            <small>Sep 10 • 3:00 PM</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel quick-panel">
+
+                    <h3>Quick Actions</h3>
+
+                    <button onclick="openModal()">＋ Add Customer</button>
+                    <button>＋ Create Lead</button>
+                    <button>＋ Add Opportunity</button>
+                    <button>▤ Generate Report</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- ADD CUSTOMER MODAL -->
+
+<div class="modal-overlay" id="customerModal">
+
+    <div class="modal">
+
+        <div class="modal-header">
+            <h2>Add New Customer</h2>
+            <button onclick="closeModal()">×</button>
+        </div>
+
+        <form onsubmit="addCustomer(event)">
+
+            <label>Customer Name</label>
+            <input type="text" id="customerName" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Company</label>
+            <input type="text" required>
+
+            <label>Deal Value</label>
+            <input type="number" placeholder="₹">
+
+            <div class="modal-actions">
+                <button type="button" class="outline-btn" onclick="closeModal()">
+                    Cancel
+                </button>
+
+                <button class="primary-btn">
+                    Add Customer
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
